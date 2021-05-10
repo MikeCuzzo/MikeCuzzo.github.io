@@ -1,6 +1,9 @@
 body {
     background-color: #d3d3d3;
-    margin: 0;
+}
+
+.page-wrapper {
+    margin-bottom: 3rem;
 }
 
 .header {
@@ -8,7 +11,7 @@ body {
     text-align: center;
 }
 
-.MyPhoto {
+.my-photo {
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -19,52 +22,56 @@ body {
     font-size: 1.2rem;
 }
 
+.my-projects {
+    text-align: center;
+}
+
 .projects-wrapper {
     text-align: center;
     margin: auto;
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-container {
-    display: inline-block;
+    flex: 1;
     border: 1px solid gray;
-    width: 20%;
-    margin: 1rem 4.4rem 10rem 0;
-}
-
-.content {
-    padding: 1rem;
     background-color: white;
-    text-decoration: none;
-}
-
-.icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    height: 5rem;
-    width: 5rem;
-    padding-bottom: 1.5rem;
+    width: 20%;
+    margin: 1rem 4.4rem 1rem 0;
 }
 
 a {
     display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    font-size: 1.2rem;
     color: black;
 }
 
+a:hover {
+    background-color: #F0F0F0;
+}
+
+.content {
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.icon {
+    height: 6.5rem;
+    width: 5rem;
+    padding-bottom: 1rem;
+}
+
 .language {
-    border: 1px lightblue solid;
-    border-radius: 10rem;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: lightblue;
     font-weight: bold;
-    width: 4.5vw;
+    border-radius: 1rem;
+    margin: 0.2rem;
+}
+
+.language span{
+    border-radius: 1rem;
+    margin: 0;
 }
 
 .description {
