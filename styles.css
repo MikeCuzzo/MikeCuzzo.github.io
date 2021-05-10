@@ -1,0 +1,73 @@
+body {
+    background-color: #d3d3d3;
+    margin: 0;
+}
+
+.header {
+    padding: 3rem 0 1.5rem 0;
+    text-align: center;
+}
+
+.MyPhoto {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.header p {
+    padding: 0 29%;
+    font-size: 1.2rem;
+}
+
+.projects-wrapper {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.project-container {
+    display: inline-block;
+    border: 1px solid gray;
+    width: 20%;
+    margin: 1rem 4.4rem 10rem 0;
+}
+
+.content {
+    padding: 1rem;
+    background-color: white;
+    text-decoration: none;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 5rem;
+    width: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 1.2rem;
+    color: black;
+}
+
+.language {
+    border: 1px lightblue solid;
+    border-radius: 10rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: lightblue;
+    font-weight: bold;
+    width: 4.5vw;
+}
+
+.description {
+    font-size: 1rem;
+    padding: 0 10%;
+}
