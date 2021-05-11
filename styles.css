@@ -67,6 +67,10 @@ a:hover {
     margin: 0.2rem;
 }
 
+span {
+    padding: .1rem;
+}
+
 .language span{
     border-radius: 1rem;
     margin: 0;
