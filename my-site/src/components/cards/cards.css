@@ -1,0 +1,37 @@
+.cards {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    width: 20%;
+}
+
+.card:hover {
+    background-color: #F0F0F0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    height: 5rem;
+    width: 5rem;
+}
+
+#language {
+    background-color: #007BFF;
+    margin: 0 .25rem;
+    padding: .25rem 1rem;
+    border-radius: 3rem;
+    color:white;
+    font-weight: bold;
+}
