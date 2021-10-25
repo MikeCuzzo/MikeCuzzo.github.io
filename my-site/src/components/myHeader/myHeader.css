@@ -1,3 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 6rem;
+}
 img {
     border-radius: 50%;
+}
+
+.headerText {
+    margin: 1rem;
+    width: 50%;
 }
