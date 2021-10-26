@@ -1,10 +1,12 @@
 .header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 2rem 6rem;
 }
-img {
-    border-radius: 50%;
+.my-photo {
+    min-width: 193px;
+    max-height: 245px;
 }
 
 .headerText {

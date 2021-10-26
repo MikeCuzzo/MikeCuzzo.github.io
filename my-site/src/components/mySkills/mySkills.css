@@ -5,8 +5,17 @@
 ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 3rem;
 }
 
 li {
-    margin: 0 3rem;
+    margin: 1rem 3rem;
+    display: block;
+}
+
+li img {
+    height: 8rem;
+    width: 8rem;
 }

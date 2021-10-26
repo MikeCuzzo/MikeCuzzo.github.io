@@ -11,8 +11,7 @@ export default class MyHeader extends React.Component {
                 <h1>Michael Cuzzo - Software Developer</h1>
                 <h2>About Me</h2>
                 <p>I am a 4th year student studying Computer Science at Southern Methodist University. I am an aspiring
-                front end
-                software developer with experience in C++, Java, HTML, CSS, Angular, and more.
+                front end software developer.
                 </p>
             </div>
         </div>

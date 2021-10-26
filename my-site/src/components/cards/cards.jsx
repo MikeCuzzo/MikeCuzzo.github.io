@@ -1,7 +1,7 @@
 import React from "react";
 import './cards.css';
-import graphImg from './graph.png'
-import searchImg from './search.png'
+import graphImg from './icons/graph.png'
+import searchImg from './icons/search.png'
 
 export default class Cards extends React.Component {
     ProjectList(props) {
@@ -57,7 +57,10 @@ export default class Cards extends React.Component {
 ]
     render() {
         return (
+            <div>
+            <h2 class="projectsTitle">My Projects</h2>
             <this.ProjectList projects={this.projects}/>
+            </div>
         );
     }
 }
