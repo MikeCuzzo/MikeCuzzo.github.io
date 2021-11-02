@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem 6rem;
+}
+.my-photo {
+    min-width: 193px;
+    max-height: 245px;
+}
+
+.headerText {
+    margin: 0 0 1rem 2rem;
+    width: 50%;
+}
+
+.headerText h1 {
+    margin: 0;
+}
+
+.headerText p {
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 760px) {
+    .header { 
+        text-align: center;
+        justify-content: center;
+    }
+
+    .headerText {
+        margin: 1rem 0;
+    }
+
+    .headerText p  {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+}
