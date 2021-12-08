@@ -11,11 +11,14 @@ export const Skills = props => {
     }, []);
 
     if (!repo) {
-        return <Loading />
+        return <div>
+            <h2>My Skills</h2>
+            <Loading />
+        </div>
     }
     return (
-        <div className="mySkills">
-            <h1>My Skills</h1>
+        <div>
+            <h2>My Skills</h2>
         </div>
     )
 }

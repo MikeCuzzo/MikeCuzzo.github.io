@@ -11,11 +11,17 @@ export const Bio = props => {
     }, []);
 
     if (!account) {
-        return <Loading/>
+        return <div>
+            <h2>About Me</h2>
+            <Loading />
+        </div>
     }
 
     return <div className="container">
-        <h1>About Me</h1>
-        <p>{account.bio}</p>
+        <h2 className="mb-5">About Me</h2>
+        <div className="row">
+            <img src={account.avatar_url} alt="my-photo" className="col-3 rounded-circle" />
+            <p className="col-8 align-middle">{account.bio}</p>
+        </div>
     </div>
 }
