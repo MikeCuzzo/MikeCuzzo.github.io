@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.aa0ca213.chunk.css",
-    "main.js": "/my-site/static/js/main.686e05db.chunk.js",
-    "main.js.map": "/my-site/static/js/main.686e05db.chunk.js.map",
-    "runtime-main.js": "/my-site/static/js/runtime-main.8e62b92c.js",
-    "runtime-main.js.map": "/my-site/static/js/runtime-main.8e62b92c.js.map",
-    "static/css/2.0a9ec390.chunk.css": "/my-site/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.62ffdecd.chunk.js": "/my-site/static/js/2.62ffdecd.chunk.js",
-    "static/js/2.62ffdecd.chunk.js.map": "/my-site/static/js/2.62ffdecd.chunk.js.map",
-    "index.html": "/my-site/index.html",
-    "static/css/2.0a9ec390.chunk.css.map": "/my-site/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.aa0ca213.chunk.css.map": "/my-site/static/css/main.aa0ca213.chunk.css.map",
-    "static/js/2.62ffdecd.chunk.js.LICENSE.txt": "/my-site/static/js/2.62ffdecd.chunk.js.LICENSE.txt"
+    "main.css": "/MikeCuzzo.github.io/static/css/main.aa0ca213.chunk.css",
+    "main.js": "/MikeCuzzo.github.io/static/js/main.686e05db.chunk.js",
+    "main.js.map": "/MikeCuzzo.github.io/static/js/main.686e05db.chunk.js.map",
+    "runtime-main.js": "/MikeCuzzo.github.io/static/js/runtime-main.5a359e07.js",
+    "runtime-main.js.map": "/MikeCuzzo.github.io/static/js/runtime-main.5a359e07.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/MikeCuzzo.github.io/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.62ffdecd.chunk.js": "/MikeCuzzo.github.io/static/js/2.62ffdecd.chunk.js",
+    "static/js/2.62ffdecd.chunk.js.map": "/MikeCuzzo.github.io/static/js/2.62ffdecd.chunk.js.map",
+    "index.html": "/MikeCuzzo.github.io/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/MikeCuzzo.github.io/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.aa0ca213.chunk.css.map": "/MikeCuzzo.github.io/static/css/main.aa0ca213.chunk.css.map",
+    "static/js/2.62ffdecd.chunk.js.LICENSE.txt": "/MikeCuzzo.github.io/static/js/2.62ffdecd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8e62b92c.js",
+    "static/js/runtime-main.5a359e07.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.62ffdecd.chunk.js",
     "static/css/main.aa0ca213.chunk.css",
