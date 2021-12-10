@@ -20,8 +20,8 @@ export const Bio = props => {
     return <div className="container">
         <h2 className="mb-5">About Me</h2>
         <div className="row">
-            <img src={account.avatar_url} alt="my-photo" className="col-3 rounded-circle" />
-            <p className="col-8 align-middle">{account.bio}</p>
+            <img src={account.avatar_url} alt="my-photo" className="col-3" />
+            <p className="col-8 text-start">{account.bio}</p>
         </div>
     </div>
 }
