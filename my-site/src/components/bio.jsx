@@ -12,7 +12,7 @@ export const Bio = props => {
 
     if (!account) {
         return <div>
-            <h2>About Me</h2>
+            <h2 className="mb-5">About Me</h2>
             <Loading />
         </div>
     }

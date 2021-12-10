@@ -6,7 +6,7 @@ export const Header = props => {
     return (
         <div className="header mt-5">
             <h1 className="fw-bold">Michael Cuzzo</h1>
-            <nav className="nav justify-content-center mt-5 mb-5">
+            <nav className="nav justify-content-center mt-5 mb-5 flex-column flex-sm-row">
                 <NavLink to="/"
                     className={(navData) =>
                         navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
@@ -32,7 +32,6 @@ export const Header = props => {
                         navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
                     <h3>Contact</h3>
                 </NavLink>
-                <hr />
             </nav>
         </div>
     );
