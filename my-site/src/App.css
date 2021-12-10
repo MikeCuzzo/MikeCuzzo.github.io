@@ -20,7 +20,6 @@
 
 .skill-icon {
     height: 6rem;
-    width: 6rem;
 }
 
 .card:hover {
@@ -30,9 +29,4 @@
 a {
     color: black !important;
     text-decoration: none !important;
-}
-
-#linkedin-icon {
-    height: 10rem;
-    width: 10rem;
 }
