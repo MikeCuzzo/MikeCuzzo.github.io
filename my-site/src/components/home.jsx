@@ -3,7 +3,7 @@ import React from "react";
 export const Home = props => {
     return (
         <div className="container">
-            <h1 className="mb-5">Welcome to My Website!</h1>
+            <h1 className="mb-5" id="tabHeader">Welcome to My Website!</h1>
             <h5>
                 Here you can get an idea of who I am,
                 see what technical skills I possess,

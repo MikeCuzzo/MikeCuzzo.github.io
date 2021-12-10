@@ -18,9 +18,9 @@ export const Contact = props => {
 
     return (
         <div className="container">
-            <h2 className="mb-5">Contact Me</h2>
+            <h2 className="mb-5" id="tabHeader">Contact Me</h2>
             <div>
-                <div className="col-7 container bg-light border text-start p-3 mb-5">
+                <div className="col-10 col-lg-7 container bg-light border text-start p-3 mb-5">
                     <h5 className="mb-3">Send Me an Email</h5>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="mb-3">
@@ -39,7 +39,7 @@ export const Contact = props => {
                                 id="user_email"
                                 className="form-control" />
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-4">
                             <label className="form-label"
                                 htmlFor="message">Message</label>
                             <textarea
@@ -49,7 +49,8 @@ export const Contact = props => {
                         </div>
                         <input type="submit"
                             value="Send"
-                            className="btn btn-primary mb-4" />
+                            className="btn btn-primary mb-2"
+                            id="sendEmail" />
                     </form>
                 </div>
                 <div>

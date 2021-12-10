@@ -19,7 +19,7 @@ export const Projects = props => {
     else { console.log(repo); }
 
     return <div className="container">
-        <h2 className="mb-5">My Projects</h2>
+        <h2 className="mb-5" id="tabHeader">My Projects</h2>
         <div className="row row-cols-1 row-cols-md-2 g-4">
             {
                 repo.map((project) => <div className="col">

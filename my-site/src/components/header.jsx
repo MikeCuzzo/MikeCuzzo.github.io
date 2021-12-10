@@ -4,9 +4,10 @@ import { useHistory } from "react-router-dom";
 
 export const Header = props => {
     return (
-        <div className="header mt-5">
+        <div className="header mt-5" id="header">
             <h1 className="fw-bold">Michael Cuzzo</h1>
-            <nav className="nav justify-content-center mt-5 mb-5 flex-column flex-sm-row">
+            <nav className="nav justify-content-center mt-5 mb-5 flex-column flex-sm-row"
+            id="navBar">
                 <NavLink to="/"
                     className={(navData) =>
                         navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
