@@ -1,15 +1,6 @@
-import React, { useEffect, useState } from "react";
-import GithubRepos from "../api/githubRepos";
-import Loading from './loading';
+import React from "react";
 
 export const Skills = props => {
-    const [repo, setRepo] = useState(undefined);
-    const githubRepos = new GithubRepos();
-
-    useEffect(() => {
-        githubRepos.getRepos().then(x => setRepo(x));
-    }, []);
-
     const MySkills = [
         // skill, iconUrl(from https://devicon.dev/)
         { name: "Java", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
@@ -30,19 +21,13 @@ export const Skills = props => {
 
     MySkills.sort((a, b) => a.name.localeCompare(b.name));
 
-    if (!repo) {
-        return <div>
-            <h2 className="mb-5">My Skills</h2>
-            <Loading />
-        </div>
-    }
     return (
         <div className="container">
             <h2 className="mb-5" id="tabHeader">My Skills</h2>
             <div className="row flex-row">
                 {
                     MySkills.map((skill) =>
-                        <div className="card col-11 col-lg-2 m-3 p-3">
+                        <div className="card col-3 col-lg-1 m-3 p-3">
                             <img src={skill.iconUrl} alt={skill.name} className="skill-icon card-img-top mb-2" />
                             <p className="card-title">{skill.name}</p>
                         </div>

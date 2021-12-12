@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 
 export const Header = props => {
     return (

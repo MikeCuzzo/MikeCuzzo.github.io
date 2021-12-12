@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import GithubRepos from "../api/githubRepos";
 import Loading from './loading';
+import { ProjectCard } from "./projectcard";
 
 export const Projects = props => {
     const [repo, setRepo] = useState(undefined);
@@ -22,17 +23,8 @@ export const Projects = props => {
         <h2 className="mb-5" id="tabHeader">My Projects</h2>
         <div className="row row-cols-1 row-cols-md-2 g-4">
             {
-                repo.map((project) => <div className="col">
-                    <div className="card" key={project.id}>
-                        <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                            <div className="card-body">
-                                <h3 className="card-title">{project.name}</h3>
-                                <span className="badge rounded-pill bg-primary mb-2">{project.language}</span>
-                                <p className="card-text align-middle">{project.description}</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                repo.map((project) =>
+                    <ProjectCard project={project} />
                 )
             }
         </div>

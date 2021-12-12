@@ -24,4 +24,15 @@ export default class GithubRepos {
                 })
         });
     }
+
+    getLanguages(projectName){
+        return new Promise((resolve, reject) => {
+            axios.get(`https://api.github.com/repos/MikeCuzzo/${projectName}/languages`)
+                .then(x => resolve(x.data))
+                .catch(x => {
+                    alert(x);
+                    reject(x);
+                })
+        });
+    }
 }
