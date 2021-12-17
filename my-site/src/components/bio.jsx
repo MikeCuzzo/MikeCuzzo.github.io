@@ -20,7 +20,7 @@ export const Bio = props => {
     return <div className="container">
         <h2 className="mb-5" id="tabHeader">About Me</h2>
         <div className="row" id="bioDiv">
-            <img src={account.avatar_url} alt="my-photo" className="col-lg-3" id="myPhoto"/>
+            <img src={account.avatar_url} alt="my-photo" className="col-lg-3 mb-4 mx-auto w-25" id="myPhoto"/>
             <p className="col-12 col-lg-8 text-start" id="bio">{account.bio}</p>
         </div>
     </div>

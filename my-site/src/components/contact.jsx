@@ -7,13 +7,20 @@ export const Contact = props => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        if (e.target[0].value !== '' && e.target[1].value !== '' && e.target[2].value !== '') {
+            emailjs.sendForm('service_8u8gfoi', 'template_yxqezvq', form.current, 'user_1IgsCanixBcsEdhU89UAZ')
+                .then((result) => {
+                    console.log(result.text);
+                    alert("Message sent");
+                }, (error) => {
+                    console.log(error.text);
+                    alert("Error sending message");
+                });
+            document.getElementById("contact-form").reset();
+        } else {
+            alert("All fields are required");
+        }
 
-        emailjs.sendForm('service_8u8gfoi', 'template_yxqezvq', form.current, 'YOUR_USER_ID')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
     };
 
     return (
@@ -22,7 +29,7 @@ export const Contact = props => {
             <div>
                 <div className="col-10 col-lg-7 container bg-light border text-start p-3 mb-5">
                     <h5 className="mb-3">Send Me an Email</h5>
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form ref={form} onSubmit={sendEmail} id="contact-form">
                         <div className="mb-3">
                             <label className="form-label"
                                 htmlFor="user_name">Name</label>
