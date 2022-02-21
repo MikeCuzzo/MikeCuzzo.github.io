@@ -27,7 +27,7 @@ export const Skills = props => {
             <div className="row flex-row">
                 {
                     MySkills.map((skill) =>
-                        <div className="card col-3 col-lg-1 m-3 p-3">
+                        <div className="card col-4 col-lg-2 m-3 p-3">
                             <img src={skill.iconUrl} alt={skill.name} className="skill-icon card-img-top mb-2" />
                             <p className="card-title">{skill.name}</p>
                         </div>

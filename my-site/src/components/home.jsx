@@ -14,13 +14,13 @@ export const Home = props => {
                 see what projects I have worked on,
                 and provide links to contact me.
             </h5>
-            <h3 className="mt-5">Checkout My Resumes</h3>
+            <h3 className="mt-5 mb-5">Checkout My Resumes</h3>
             <div id="resume-buttons" className="d-flex justify-content-around w-50 mx-auto">
                 <button className="badge btn-primary" onClick={() => setDisplay("OO")}>Object Oriented</button>
                 <button className="badge btn-primary" onClick={() => setDisplay("WD")}>Web Developement</button>
             </div>
-            {toDisplay === "OO" && <iframe src={OOResume} className="w-100 bg-none" />}
-            {toDisplay === "WD" && <iframe src={WDResume} className="w-100 bg-none" />}
+            {toDisplay === "OO" && <iframe src={OOResume} className="mt-5 w-100" />}
+            {toDisplay === "WD" && <iframe src={WDResume} className="mt-5 w-100" />}
         </div>
     )
 }

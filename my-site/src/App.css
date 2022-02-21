@@ -5,13 +5,6 @@
     overflow-y: auto;
 }
 
-iframe {
-    margin-top: 2rem;
-    border-style: none;
-    width: 100%;
-    height: 70rem;
-}
-
 .nav-link {
     color: #a2a2a2 !important;
 }
@@ -26,8 +19,16 @@ iframe {
     border-bottom: 1px solid #ddd;
 }
 
+iframe {
+    height: 70rem;
+}
+
 .skill-icon {
     height: 6rem;
+}
+
+.card>p {
+    white-space: nowrap;
 }
 
 .card:hover {
