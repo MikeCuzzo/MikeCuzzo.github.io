@@ -1,0 +1,17 @@
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.card:hover {
+    background-color: #e4e4e4;
+}
+
+@media (prefers-color-scheme: dark) {
+    .card {
+        background-color: #ddd !important;
+    }
+    .card-body>span {
+        color: #ddd;
+    }
+}

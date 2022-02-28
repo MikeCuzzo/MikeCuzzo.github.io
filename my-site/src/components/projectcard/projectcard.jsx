@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import GithubRepos from "../api/githubRepos";
-import Loading from './loading';
+import GithubRepos from "../../api/githubRepos";
+import Loading from '../loading/loading';
+import './projectcard.scss';
 
-export const ProjectCard = props => {
+const ProjectCard = props => {
     const [project, setProject] = useState(props.project);
     const [languages, setLanguages] = useState(undefined);
     const githubRepos = new GithubRepos();
@@ -41,3 +42,5 @@ export const ProjectCard = props => {
     </div>
 
 }
+
+export default ProjectCard;

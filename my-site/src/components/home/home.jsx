@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import OOResume from '../Resumes/OO-Resume.pdf';
-import WDResume from '../Resumes/WD-Resume.pdf';
+import OOResume from '../../Resumes/OO-Resume.pdf';
+import WDResume from '../../Resumes/WD-Resume.pdf';
+import './home.scss';
 
-export const Home = props => {
+const Home = props => {
     const [toDisplay, setDisplay] = useState("");
 
     return (
-        <div className="container">
+        <div className="container" id="home">
             <h1 className="mb-5" id="tabHeader">Welcome to My Website!</h1>
             <h5>
                 Here you can get an idea of who I am,
@@ -24,3 +25,5 @@ export const Home = props => {
         </div>
     )
 }
+
+export default Home;

@@ -1,0 +1,19 @@
+#contact-container {
+    border-radius: .5rem;
+}
+
+@media screen and (max-width: 576px) {
+    #sendEmail {
+        width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #contact-container {
+        background-color: #ddd !important;
+        border: 1px solid white;
+    }
+    #socials-header {
+        color: #ddd;
+    }
+}

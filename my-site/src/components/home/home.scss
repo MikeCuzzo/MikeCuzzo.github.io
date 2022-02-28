@@ -1,0 +1,9 @@
+iframe {
+    height: 70rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    #home>* {
+        color: #ddd;
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
+import './skills.scss';
 
-export const Skills = props => {
+const Skills = props => {
     const MySkills = [
         // skill, iconUrl(from https://devicon.dev/)
         { name: "Java", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
@@ -37,3 +38,5 @@ export const Skills = props => {
         </div>
     )
 }
+
+export default Skills;

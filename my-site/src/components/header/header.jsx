@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import './header.scss';
 
-export const Header = props => {
+const Header = props => {
     return (
         <div className="header mt-5" id="header">
             <h1 className="fw-bold">Michael Cuzzo</h1>
@@ -36,3 +37,5 @@ export const Header = props => {
         </div>
     );
 }
+
+export default Header;

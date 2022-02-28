@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import GithubRepos from "../api/githubRepos";
-import Loading from './loading';
-import { ProjectCard } from "./projectcard";
+import GithubRepos from "../../api/githubRepos";
+import Loading from '../loading/loading';
+import ProjectCard from "../projectcard/projectcard";
 
-export const Projects = props => {
+const Projects = props => {
     const [repo, setRepo] = useState(undefined);
     const githubRepos = new GithubRepos();
 
@@ -30,3 +30,5 @@ export const Projects = props => {
         </div>
     </div>
 }
+
+export default Projects;

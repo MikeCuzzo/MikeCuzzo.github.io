@@ -1,5 +1,10 @@
 import './App.css';
-import { Bio, Contact, Header, Home, Projects, Skills } from './components';
+import Bio from './components/bio/bio';
+import Contact from './components/contact/contact';
+import Header from './components/header/header';
+import Home from './components/home/home';
+import Projects from './components/projects/projects';
+import Skills from './components/skills/skills';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

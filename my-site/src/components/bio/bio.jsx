@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import GithubRepos from "../api/githubRepos";
-import Loading from './loading';
+import GithubRepos from '../../api/githubRepos';
+import Loading from '../loading/loading';
+import './bio.scss';
 
-export const Bio = props => {
+const Bio = (props) => {
     const [account, setAccount] = useState(undefined);
     const githubRepos = new GithubRepos();
 
@@ -36,3 +37,5 @@ export const Bio = props => {
         </div>
     </div>
 }
+
+export default Bio;

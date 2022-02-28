@@ -3,78 +3,26 @@
     text-align: center;
     font-family: 'Nunito', sans-serif;
     overflow-y: auto;
-}
-
-.nav-link {
-    color: #a2a2a2 !important;
-}
-
-.nav-link:hover {
-    color: black !important;
-    border-bottom: 1px solid #ddd;
-}
-
-.nav-link-focus {
-    color: black !important;
-    border-bottom: 1px solid #ddd;
-}
-
-iframe {
-    height: 70rem;
-}
-
-.skill-icon {
-    height: 6rem;
-}
-
-.card>p {
-    white-space: nowrap;
-}
-
-.card:hover {
-    background-color: #e4e4e4;
-}
-
-a {
-    color: black !important;
-    text-decoration: none !important;
+    padding-bottom: 5rem;
 }
 
 @media screen and (max-width: 576px) {
     .container {
         margin-bottom: 5rem;
     }
-    #header {
-        margin-top: 3rem!important;
-    }
-    #navBar {
-        margin-top: 1rem!important;
-        margin-bottom: 1rem!important;
-    }
-    .nav-link h3 {
-        font-size: 1.3rem;
-        margin-top: -.5rem;
-        margin-bottom: 0;
-    }
-    .nav-link-focus {
-        border-style: hidden;
-    }
-    .nav-link:hover {
-        border-style: hidden;
-    }
-    .nav-link-focus h3 {
-        font-weight: bold;
-    }
     #tabHeader {
         margin-bottom: 1rem!important;
     }
-    #bioDiv {
-        display: block!important;
+}
+
+
+/*Dark mode*/
+
+@media (prefers-color-scheme: dark) {
+    .App {
+        background-color: #1a1a1a;
     }
-    #bio {
-        text-align: center!important;
-    }
-    #sendEmail {
-        width: 100%;
+    #tabHeader {
+        color: #ddd;
     }
 }

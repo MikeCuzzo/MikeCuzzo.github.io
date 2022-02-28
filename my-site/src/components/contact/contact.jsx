@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from 'emailjs-com';
+import './contact.scss';
 
-export const Contact = props => {
+const Contact = props => {
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -27,7 +28,8 @@ export const Contact = props => {
         <div className="container">
             <h2 className="mb-5" id="tabHeader">Contact Me</h2>
             <div>
-                <div className="col-10 col-lg-7 container bg-light border text-start p-3 mb-5">
+                <div className="col-10 col-lg-7 container bg-light border text-start p-3 mb-5"
+                id="contact-container">
                     <h5 className="mb-3">Send Me an Email</h5>
                     <form ref={form} onSubmit={sendEmail} id="contact-form">
                         <div className="mb-3">
@@ -61,7 +63,7 @@ export const Contact = props => {
                     </form>
                 </div>
                 <div>
-                    <p>Connect with me</p>
+                    <p id="socials-header">Connect with me</p>
                     <a href="https://www.linkedin.com/in/michael-cuzzo-24823117b?trk=profile-badge">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                             className="skill-icon"
@@ -72,3 +74,5 @@ export const Contact = props => {
         </div>
     );
 }
+
+export default Contact;
