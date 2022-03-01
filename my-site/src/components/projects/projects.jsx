@@ -13,7 +13,7 @@ const Projects = props => {
 
     if (!repo) {
         return <div>
-            <h2>My Projects</h2>
+            <h2 id="tabHeader">My Projects</h2>
             <Loading />
         </div>
     }

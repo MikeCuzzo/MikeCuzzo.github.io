@@ -15,14 +15,14 @@ const ProjectCard = props => {
 
     const varToString = varObj => Object.keys(varObj).slice(0,4)
 
-    if (!languages) {
-        return <div>
-            <h2>My Projects</h2>
-            <Loading />
-        </div>
-    }
+    // if (!languages) {
+    //     return <div>
+    //         <h2>My Projects</h2>
+    //         <Loading />
+    //     </div>
+    // }
 
-    else{console.log(languages)}
+    // else{console.log(languages)}
 
     return <div className="col">
         <div className="card" key={project.id}>
