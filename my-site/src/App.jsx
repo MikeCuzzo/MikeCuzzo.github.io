@@ -5,6 +5,7 @@ import Header from './components/header/header';
 import Home from './components/home/home';
 import Projects from './components/projects/projects';
 import Skills from './components/skills/skills';
+import SelectLanguage from './components/selectLanguage/selectLanguage';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -21,6 +22,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
+        <SelectLanguage />
       </Router>
     </div>
   );
