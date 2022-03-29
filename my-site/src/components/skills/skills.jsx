@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './skills.scss';
+import translation from "./translation";
 
 const Skills = props => {
+    const [language, setLanguage] = useState(props.lang);
+
+    useEffect(() => {
+        setLanguage(props.lang);
+    }, [props.lang]);
+
+    const text = translation(language);
+
     const MySkills = [
         // skill, iconUrl(from https://devicon.dev/)
         { name: "Java", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
@@ -24,7 +33,7 @@ const Skills = props => {
 
     return (
         <div className="container">
-            <h2 className="mb-5" id="tabHeader">My Skills</h2>
+            <h2 className="mb-5" id="tabHeader">{text.about}</h2>
             <div className="row flex-row">
                 {
                     MySkills.map((skill) =>

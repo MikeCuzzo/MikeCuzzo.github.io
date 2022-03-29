@@ -2,36 +2,39 @@ import React, { useEffect, useState } from "react";
 import GithubRepos from '../../api/githubRepos';
 import Loading from '../loading/loading';
 import './bio.scss';
+import translation from "./translation";
 
 const Bio = (props) => {
     const [account, setAccount] = useState(undefined);
+    const [language, setLanguage] = useState(props.lang);
+
     const githubRepos = new GithubRepos();
 
     useEffect(() => {
         githubRepos.getOwner().then(x => setAccount(x));
-    }, []);
+        setLanguage(props.lang);
+    }, [props.lang]);
+
+    const text = translation(language);
 
     if (!account) {
         return <div>
-            <h2 className="mb-5" id="tabHeader">About Me</h2>
+            <h2 className="mb-5" id="tabHeader">{text.about}</h2>
             <Loading />
         </div>
     }
 
     return <div className="container">
-        <h2 className="mb-5" id="tabHeader">About Me</h2>
+        <h2 className="mb-5" id="tabHeader">{text.about}</h2>
         <div className="row" id="bioDiv">
             <img src={account.avatar_url} alt="my-photo" className="col-lg-3 mb-4 w-25" id="myPhoto" />
             <div id="bio-text" className="col">
                 <p className="col-12 col-lg-8 text-start">
-                    I am a 4th-year student studying Computer Science at Southern Methodist University.
-                    I am an aspiring front-end software developer.
+                    {text.paragraph1}
                 </p>
 
                 <p className="col-12 col-lg-8 text-start">
-                    My passion for front-development stems from the joy of creating what the users will
-                    see in their software. I feel a connection with the end users, and I like to put myself
-                    in their shoes and pretend like I am them when I navigate my program.
+                    {text.paragraph2}
                 </p>
             </div>
         </div>

@@ -1,8 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from 'emailjs-com';
 import './contact.scss';
+import translation from "./translation";
 
 const Contact = props => {
+    const [language, setLanguage] = useState(props.lang);
+
+    useEffect(() => {
+        setLanguage(props.lang);
+    }, [props.lang]);
+
+    const text = translation(language);
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -26,15 +35,15 @@ const Contact = props => {
 
     return (
         <div className="container">
-            <h2 className="mb-5" id="tabHeader">Contact Me</h2>
+            <h2 className="mb-5" id="tabHeader">{text.about}</h2>
             <div>
                 <div className="col-10 col-lg-7 container bg-light border text-start p-3 mb-5"
-                id="contact-container">
-                    <h5 className="mb-3">Send Me an Email</h5>
+                    id="contact-container">
+                    <h5 className="mb-3">{text.sendMe}</h5>
                     <form ref={form} onSubmit={sendEmail} id="contact-form">
                         <div className="mb-3">
                             <label className="form-label"
-                                htmlFor="user_name">Name</label>
+                                htmlFor="user_name">{text.name}</label>
                             <input type="text"
                                 name="user_name"
                                 id="user_name"
@@ -42,7 +51,7 @@ const Contact = props => {
                         </div>
                         <div className="mb-3">
                             <label className="form-label"
-                                htmlFor="user_email">Email</label>
+                                htmlFor="user_email">{text.email}</label>
                             <input type="email"
                                 name="user_email"
                                 id="user_email"
@@ -50,20 +59,20 @@ const Contact = props => {
                         </div>
                         <div className="mb-4">
                             <label className="form-label"
-                                htmlFor="message">Message</label>
+                                htmlFor="message">{text.message}</label>
                             <textarea
                                 name="message"
                                 id="message"
                                 className="form-control" />
                         </div>
                         <input type="submit"
-                            value="Send"
+                            value={text.send}
                             className="btn btn-primary mb-2"
                             id="sendEmail" />
                     </form>
                 </div>
                 <div>
-                    <p id="socials-header">Connect with me</p>
+                    <p id="socials-header">{text.connect}</p>
                     <a href="https://www.linkedin.com/in/michael-cuzzo-24823117b?trk=profile-badge">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                             className="skill-icon"
