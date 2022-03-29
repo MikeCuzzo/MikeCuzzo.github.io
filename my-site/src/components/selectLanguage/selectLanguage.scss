@@ -2,3 +2,10 @@
     width: 1rem;
     margin: 0 .5rem;
 }
+
+//dark mode media query
+@media (prefers-color-scheme: dark) {
+    #selectLanguage>p {
+        color: #ddd;
+    }
+}

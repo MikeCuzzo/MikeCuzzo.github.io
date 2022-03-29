@@ -17,7 +17,6 @@ const Projects = props => {
             <Loading />
         </div>
     }
-    else { console.log(repo); }
 
     return <div className="container">
         <h2 className="mb-5" id="tabHeader">My Projects</h2>

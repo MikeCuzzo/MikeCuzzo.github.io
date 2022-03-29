@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useEffect, useState } from 'react';
 import Bio from './components/bio/bio';
 import Contact from './components/contact/contact';
 import Header from './components/header/header';
@@ -11,18 +12,30 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
+  let currentLanguage = "en";
+  const [language, setLanguage] = useState(currentLanguage);
+
+  const handleLanguageChange = (lang) => {
+    setLanguage(lang);
+    // window.location.reload();
+  }
+
+  useEffect(() => {
+    currentLanguage = language || 'en';
+  }, [language]);
+
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Header lang={language} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="bio" element={<Bio />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="/" element={<Home lang={language} />} />
+          <Route path="bio" element={<Bio lang={language} />} />
+          <Route path="skills" element={<Skills lang={language} />} />
+          <Route path="projects" element={<Projects lang={language} />} />
+          <Route path="contact" element={<Contact lang={language} />} />
         </Routes>
-        <SelectLanguage />
+        <SelectLanguage handleLanguageChange={handleLanguageChange} lang={language} />
       </Router>
     </div>
   );
