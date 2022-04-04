@@ -1,0 +1,12 @@
+#github-icon {
+    width: 3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    #source {
+        color: #ddd;
+    }
+    #github-icon {
+        filter: invert(1);
+    }
+}
