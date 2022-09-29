@@ -46,7 +46,7 @@
 #home-button {
   margin-top: 5rem;
   text-align: center;
-  a {
+  button {
     padding: 1.5rem 8rem;
     font-size: 2rem;
     background: #09ebee;
@@ -61,5 +61,17 @@
     border: none;
     margin: 3rem auto 0 auto;
     max-width: 80rem;
+  }
+}
+
+#downarrow {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  img {
+    width: 9rem;
+    height: 9rem;
+    position: relative;
   }
 }
