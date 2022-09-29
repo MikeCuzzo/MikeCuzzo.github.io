@@ -1,29 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .App {
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    overflow: auto;
-    padding-bottom: 5rem;
-    height: 100vh;
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-@media screen and (max-width: 576px) {
-    .container {
-        margin-bottom: 5rem;
-    }
-    #tabHeader {
-        margin-bottom: 1rem!important;
-    }
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-
-/*Dark mode*/
-
-@media (prefers-color-scheme: dark) {
-    .App {
-        background-color: #1a1a1a;
-    }
-    #tabHeader {
-        color: #ddd;
-    }
+ul {
+  list-style: none;
 }

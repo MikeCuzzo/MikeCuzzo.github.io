@@ -1,52 +1,34 @@
-import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import './header.scss';
-import translation from './translation';
+import React from "react";
+import MyPhoto from "./MyPhoto.jpeg";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
+import "./Header.scss";
 
-const Header = props => {
-
-    const [language, setLanguage] = useState(props.lang);
-
-    useEffect(() => {
-        setLanguage(props.lang);
-    }, [props.lang]);
-
-    const text = translation(language);
-
-
+export class Header extends React.Component {
+  render() {
     return (
-        <div className="header mt-5" id="header">
-            <h1 className="fw-bold">Michael Cuzzo</h1>
-            <nav className="nav justify-content-center mt-5 mb-5 flex-column flex-sm-row"
-                id="navBar">
-                <NavLink to="/"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.home}</h3>
-                </NavLink>
-                <NavLink to="bio"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.bio}</h3>
-                </NavLink>
-                <NavLink to="skills"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.skills}</h3>
-                </NavLink>
-                <NavLink to="projects"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.projects}</h3>
-                </NavLink>
-                <NavLink to="contact"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.contact}</h3>
-                </NavLink>
-            </nav>
+      <div id="header">
+        <div id="header-content">
+          <div id="header-logo">
+            <img src={MyPhoto} />
+            <a href="/">
+              <h3>Michael Cuzzo</h3>
+            </a>
+          </div>
+          <div id="header-main">
+            <ul id="header-links">
+              <li>Home</li>
+              <li>About</li>
+              <li>Projects</li>
+              <li>Contact</li>
+            </ul>
+          </div>
         </div>
+      </div>
     );
+  }
 }
-
-export default Header;

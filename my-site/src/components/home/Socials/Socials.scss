@@ -1,0 +1,24 @@
+#socials {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+  padding: 0.5rem;
+}
+
+#social-frame {
+  width: 5rem;
+
+  a {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    transition: background 0.3s;
+    border-radius: 5px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
