@@ -14,7 +14,9 @@ export class Header extends React.Component {
       <div id="header">
         <div id="header-content">
           <div id="header-logo" onClick={() => window.location.replace("")}>
-            <img src={MyPhoto} />
+            <div id="myImageDiv">
+              <img src={MyPhoto} />
+            </div>
             <h3>Michael Cuzzo</h3>
           </div>
           <div id="header-main">
