@@ -22,10 +22,23 @@ ul {
   list-style: none;
 }
 
+textarea {
+  resize: none;
+  font-family: inherit;
+}
+
+.section {
+  padding: 12rem 0;
+}
+
 .main-container {
   max-width: 120rem;
   margin: auto;
   width: 92%;
+}
+
+.heading {
+  margin-bottom: 9rem;
 }
 
 .section-header {
@@ -36,8 +49,22 @@ ul {
   letter-spacing: 3px;
   text-align: center;
   margin-bottom: 3.5rem;
+  margin-top: 0;
   position: relative;
   color: #111;
+  overflow-x: visible;
+}
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #09ebee;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
 }
 
 .section-subheader {
@@ -49,4 +76,21 @@ ul {
   max-width: 80rem;
   margin: auto;
   line-height: 1.6;
+}
+
+button {
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+  background: #09ebee;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+  border: none;
+  margin: 3rem auto 0 auto;
+  max-width: 80rem;
 }

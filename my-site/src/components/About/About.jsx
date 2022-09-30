@@ -7,7 +7,6 @@ export class About extends React.Component {
     "CSS",
     "Javascript",
     "React",
-    "Angular",
     "React Native",
     "Swift",
     "SwiftUI",
@@ -17,13 +16,13 @@ export class About extends React.Component {
 
   render() {
     return (
-      <div id="about">
+      <div id="about" class="section">
         <div class="main-container">
-          <div>
+          <div class="heading">
             <h1 class="section-header">About Me</h1>
             <p class="section-subheader">
               Here you will find more information about me, what I do, and my
-              current skills programming and technology
+              current skills with programming and technology
             </p>
           </div>
           <div id="about-content">
