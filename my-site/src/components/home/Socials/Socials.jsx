@@ -17,7 +17,7 @@ export class Socials extends React.Component {
     return (
       <div id="socials">
         {this.socials.map((social) => (
-          <div id="social-frame">
+          <div class="social-frame">
             <a href={social.url} target="_blank">
               <img src={social.icon} />
             </a>
