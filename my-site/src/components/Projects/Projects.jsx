@@ -22,27 +22,27 @@ export class Projects extends React.Component {
   ];
   render() {
     return (
-      <div id="projects" class="section">
-        <div class="main-container">
-          <div class="heading">
-            <h1 class="section-header">Projects</h1>
-            <p class="section-subheader">
+      <div id="projects" className="section">
+        <div className="main-container">
+          <div className="heading">
+            <h1 className="section-header">Projects</h1>
+            <p className="section-subheader">
               Here you will find some of the personal and clients projects that
               I created
             </p>
           </div>
           <div id="projects-container">
             {this.projects.map((project) => (
-              <div class="project-item">
+              <div className="project-item" key={project.name}>
                 <img
                   src={project.image}
                   alt={project.name}
-                  class="project-image"
+                  className="project-image"
                 />
-                <div class="project-info">
+                <div className="project-info">
                   <h1>{project.name}</h1>
                   <p>{project.description}</p>
-                  {project.link == "" ? (
+                  {project.link === "" ? (
                     <button className="disabled-button">
                       Live Link Coming Soon
                     </button>

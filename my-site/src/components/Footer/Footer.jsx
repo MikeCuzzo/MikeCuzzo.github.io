@@ -16,15 +16,15 @@ export class Footer extends React.Component {
   render() {
     return (
       <div id="footer">
-        <div class="main-container">
+        <div className="main-container">
           <div id="footer-upper-content">
             <div id="footer-social">
               <h1>Social</h1>
               <div id="list-socials">
                 {this.socials.map((social) => (
-                  <div id="footer-social-frame">
-                    <a href={social.url} target="_blank">
-                      <img src={social.icon} />
+                  <div id="footer-social-frame" key={social.url}>
+                    <a href={social.url} target="_blank" rel="noreferrer">
+                      <img src={social.icon} alt={social.url} />
                     </a>
                   </div>
                 ))}

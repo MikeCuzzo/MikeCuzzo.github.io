@@ -15,14 +15,20 @@ export class Home extends React.Component {
             </p>
           </div>
           <div id="home-button">
-            <button onClick={() => window.location.replace("/#projects")}>
+            <button
+              className="button"
+              onClick={() => window.location.replace("/#projects")}
+            >
               Projects
             </button>
           </div>
         </div>
         <Socials />
         <div id="downarrow">
-          <img src="https://images.squarespace-cdn.com/content/v1/60f36cf54ab5a4742928e58e/1626569961284-WCMK8IK4S3NENWFCYJ0E/war+on+sanity+arrow+.gif" />
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/60f36cf54ab5a4742928e58e/1626569961284-WCMK8IK4S3NENWFCYJ0E/war+on+sanity+arrow+.gif"
+            alt="downarrow"
+          />
         </div>
       </div>
     );

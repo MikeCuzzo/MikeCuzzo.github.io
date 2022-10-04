@@ -8,7 +8,6 @@ import {
   Contact,
   Footer,
 } from "./components/Components";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (

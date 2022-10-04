@@ -50,7 +50,7 @@
   li {
     cursor: pointer;
     list-style: none;
-    padding: 2.2rem 3rem;
+    padding: 2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
     color: #333;
@@ -58,5 +58,33 @@
     letter-spacing: 1px;
     font-weight: 700;
     transition: color 0.3s;
+  }
+  @media only screen and (max-width: 40rem) {
+    display: none;
+  }
+}
+
+#header-menu {
+  display: none;
+  @media only screen and (max-width: 40rem) {
+    display: block;
+  }
+}
+
+#header-menu-content {
+  li {
+    border-top: 1px solid #eee;
+    display: block;
+    text-decoration: none;
+    padding: 2.5rem 3rem;
+    font-size: 1.6rem;
+    color: #333;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+    cursor: pointer;
   }
 }

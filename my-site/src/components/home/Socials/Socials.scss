@@ -5,6 +5,9 @@
   background: #fff;
   box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
   padding: 0.5rem;
+  @media only screen and (max-width: 40rem) {
+    display: none;
+  }
 }
 
 .social-frame {
@@ -14,7 +17,6 @@
     width: 100%;
     display: block;
     padding: 1rem;
-    transition: background 0.3s;
     border-radius: 5px;
   }
 

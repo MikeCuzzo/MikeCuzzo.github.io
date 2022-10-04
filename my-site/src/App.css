@@ -6,6 +6,27 @@
   line-height: 1.5;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 63.9rem) {
+  * {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  * {
+    font-size: 46.875%;
+    text-align: center;
+  }
+
+  .main-container {
+    padding: 0;
+    width: 85% !important;
+  }
+
+  .button {
+    padding: 5% 15% !important;
+  }
+}
 
 .App {
   display: block;
@@ -20,6 +41,7 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 textarea {
@@ -78,7 +100,7 @@ textarea {
   line-height: 1.6;
 }
 
-button {
+.button {
   padding: 1.5rem 8rem;
   font-size: 2rem;
   background: #09ebee;

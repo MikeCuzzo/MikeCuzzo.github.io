@@ -1,16 +1,17 @@
-#projects {
-  background-color: #fafafa;
-}
 .project-item {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 11rem;
+
+  @media only screen and (max-width: 85.3rem) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .project-image {
-  width: 25%;
-  height: 25%;
+  width: 35rem;
   display: block;
 }
 
@@ -25,6 +26,9 @@
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 2rem;
+    @media only screen and (max-width: 85.3rem) {
+      margin: auto;
+    }
   }
 
   p {
