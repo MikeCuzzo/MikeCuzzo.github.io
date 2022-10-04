@@ -15,7 +15,7 @@ export class Projects extends React.Component {
     {
       name: "Tiny World",
       description:
-        "This Tiny World is the home website for the associated NFT project. This Website intends users to gain information about the project, the lore and we able to mint these NFTs into their Ethereum wallets.",
+        "This website is the home for the Tiny World NFT project. This Website is intended for users to gain information about the project, the lore and they will be able to mint items from this collection into their Ethereum wallets.",
       image: tinyworldlogo,
       link: "",
     },
