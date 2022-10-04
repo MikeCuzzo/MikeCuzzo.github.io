@@ -1,29 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-.App {
+* {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 63.9rem) {
+  * {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  * {
+    font-size: 46.875%;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
-    overflow: auto;
-    padding-bottom: 5rem;
-    height: 100vh;
+  }
+
+  .main-container {
+    padding: 0;
+    width: 85% !important;
+  }
+
+  .button {
+    padding: 5% 15% !important;
+  }
 }
 
-@media screen and (max-width: 576px) {
-    .container {
-        margin-bottom: 5rem;
-    }
-    #tabHeader {
-        margin-bottom: 1rem!important;
-    }
+.App {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-y: scroll;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/*Dark mode*/
+ul {
+  list-style: none;
+  padding: 0;
+}
 
-@media (prefers-color-scheme: dark) {
-    .App {
-        background-color: #1a1a1a;
-    }
-    #tabHeader {
-        color: #ddd;
-    }
+textarea {
+  resize: none;
+  font-family: inherit;
+}
+
+.section {
+  padding: 12rem 0;
+}
+
+.main-container {
+  max-width: 120rem;
+  margin: auto;
+  width: 92%;
+}
+
+.heading {
+  margin-bottom: 9rem;
+}
+
+.section-header {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 0;
+  position: relative;
+  color: #111;
+  overflow-x: visible;
+}
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #09ebee;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.section-subheader {
+  display: block;
+  text-align: center;
+  color: #555;
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 80rem;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.button {
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+  background: #09ebee;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+  border: none;
+  margin: 3rem auto 0 auto;
+  max-width: 80rem;
+}
+
+.disabled-button {
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+  background: #cf142b;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+  border: none;
+  margin: 3rem auto 0 auto;
+  max-width: 80rem;
 }

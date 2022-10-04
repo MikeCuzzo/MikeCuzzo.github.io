@@ -1,52 +1,68 @@
-import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import './header.scss';
-import translation from './translation';
+import React from "react";
+import MyPhoto from "./MyPhoto.jpeg";
+import "./Header.scss";
 
-const Header = props => {
+export class Header extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      showMenu: false,
+    };
+  }
 
-    const [language, setLanguage] = useState(props.lang);
+  handleLinkClick(area) {
+    window.location.replace(area);
+    this.setState({ showMenu: false });
+  }
 
-    useEffect(() => {
-        setLanguage(props.lang);
-    }, [props.lang]);
-
-    const text = translation(language);
-
-
+  render() {
     return (
-        <div className="header mt-5" id="header">
-            <h1 className="fw-bold">Michael Cuzzo</h1>
-            <nav className="nav justify-content-center mt-5 mb-5 flex-column flex-sm-row"
-                id="navBar">
-                <NavLink to="/"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.home}</h3>
-                </NavLink>
-                <NavLink to="bio"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.bio}</h3>
-                </NavLink>
-                <NavLink to="skills"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.skills}</h3>
-                </NavLink>
-                <NavLink to="projects"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.projects}</h3>
-                </NavLink>
-                <NavLink to="contact"
-                    className={(navData) =>
-                        navData.isActive ? "nav-link nav-link-focus" : "nav-link"}>
-                    <h3>{text.contact}</h3>
-                </NavLink>
-            </nav>
+      <div id="header">
+        <div id="header-content">
+          <div id="header-logo" onClick={() => window.location.replace("")}>
+            <div id="myImageDiv">
+              <img src={MyPhoto} alt="MyPhoto" />
+            </div>
+            <h3>Michael Cuzzo</h3>
+          </div>
+          <div id="header-main">
+            <ul id="header-links">
+              <li onClick={() => this.handleLinkClick("")}>Home</li>
+              <li onClick={() => this.handleLinkClick("/#about")}>About</li>
+              <li onClick={() => this.handleLinkClick("/#projects")}>
+                Projects
+              </li>
+              <li onClick={() => this.handleLinkClick("/#contact")}>Contact</li>
+            </ul>
+            <div id="header-menu">
+              <img
+                src={
+                  this.state.showMenu
+                    ? "https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
+                    : "https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
+                }
+                alt="hamburger menu"
+                id="header-menu-button"
+                onClick={() =>
+                  this.setState({ showMenu: !this.state.showMenu })
+                }
+              />
+            </div>
+          </div>
         </div>
+        {this.state.showMenu && (
+          <div id="header-menu-content">
+            <ul>
+              <li onClick={() => this.handleLinkClick("")}>Home</li>
+              <li onClick={() => this.handleLinkClick("/#about")}>About</li>
+              <li onClick={() => this.handleLinkClick("/#projects")}>
+                Projects
+              </li>
+              <li onClick={() => this.handleLinkClick("/#contact")}>Contact</li>
+            </ul>
+          </div>
+        )}
+      </div>
     );
+  }
 }
-
-export default Header;

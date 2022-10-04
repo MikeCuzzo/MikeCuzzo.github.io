@@ -1,0 +1,41 @@
+.project-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 11rem;
+
+  @media only screen and (max-width: 85.3rem) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.project-image {
+  width: 35rem;
+  display: block;
+}
+
+.project-info {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    @media only screen and (max-width: 85.3rem) {
+      margin: auto;
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+    color: #666;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+}
