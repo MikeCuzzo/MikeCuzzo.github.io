@@ -5,11 +5,11 @@ export class Footer extends React.Component {
   socials = [
     {
       icon: "https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png",
-      url: "https://github.com/MikeCuzzo",
+      url: "https://www.linkedin.com/in/michael-cuzzo/",
     },
     {
       icon: "https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png",
-      url: "https://www.linkedin.com/in/michael-cuzzo/",
+      url: "https://github.com/MikeCuzzo",
     },
   ];
 

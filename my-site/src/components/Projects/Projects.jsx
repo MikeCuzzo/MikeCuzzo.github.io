@@ -17,7 +17,7 @@ export class Projects extends React.Component {
       description:
         "This website is the home for the Tiny World NFT project. This Website is intended for users to gain information about the project, the lore and they will be able to mint items from this collection into their Ethereum wallets.",
       image: tinyworldlogo,
-      link: "",
+      link: "https://www.tinyworld.me",
     },
   ];
   render() {
@@ -47,7 +47,13 @@ export class Projects extends React.Component {
                       Live Link Coming Soon
                     </button>
                   ) : (
-                    <button>Live Link</button>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      className="live-link"
+                    >
+                      <button className="button">Live Link</button>
+                    </a>
                   )}
                 </div>
               </div>
