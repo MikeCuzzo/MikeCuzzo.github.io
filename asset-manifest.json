@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ca9b97a.chunk.css",
-    "main.js": "/static/js/main.14caf62e.chunk.js",
-    "main.js.map": "/static/js/main.14caf62e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8ee523b7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8ee523b7.js.map",
-    "static/js/2.e2675e74.chunk.js": "/static/js/2.e2675e74.chunk.js",
-    "static/js/2.e2675e74.chunk.js.map": "/static/js/2.e2675e74.chunk.js.map",
+    "main.css": "/static/css/main.12cf0bce.css",
+    "main.js": "/static/js/main.16abf564.js",
+    "static/media/tinyworldlogo.png": "/static/media/tinyworldlogo.a7678afd0c024ce9b2b6.png",
+    "static/media/htvlogo.png": "/static/media/htvlogo.a30f252ae59403478d47.png",
     "index.html": "/index.html",
-    "static/css/main.1ca9b97a.chunk.css.map": "/static/css/main.1ca9b97a.chunk.css.map",
-    "static/js/2.e2675e74.chunk.js.LICENSE.txt": "/static/js/2.e2675e74.chunk.js.LICENSE.txt",
-    "static/media/htvlogo.a30f252a.png": "/static/media/htvlogo.a30f252a.png",
-    "static/media/tinyworldlogo.a7678afd.png": "/static/media/tinyworldlogo.a7678afd.png"
+    "main.12cf0bce.css.map": "/static/css/main.12cf0bce.css.map",
+    "main.16abf564.js.map": "/static/js/main.16abf564.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ee523b7.js",
-    "static/js/2.e2675e74.chunk.js",
-    "static/css/main.1ca9b97a.chunk.css",
-    "static/js/main.14caf62e.chunk.js"
+    "static/css/main.12cf0bce.css",
+    "static/js/main.16abf564.js"
   ]
 }
