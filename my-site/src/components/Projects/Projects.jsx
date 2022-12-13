@@ -10,7 +10,7 @@ export class Projects extends React.Component {
       description:
         "Head to Vegas was created to assist in the planning and booking of trips to Las Vegas. This is achieved by means of aggregating, saving and sharing of amenities essential to a trip to Las Vegas such as flights, hotels, events and reservations.",
       image: htvlogo,
-      link: "",
+      link: "https://www.headtovegas.com/",
     },
     {
       name: "Tiny World",
