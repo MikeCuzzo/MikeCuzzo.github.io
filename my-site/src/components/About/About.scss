@@ -44,3 +44,9 @@
   font-weight: 600;
   color: #666;
 }
+
+@media only screen and (max-width: 40rem) {
+  #contact-me-button {
+    padding: 5% 15% !important;
+  }
+}

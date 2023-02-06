@@ -43,6 +43,7 @@ export class About extends React.Component {
                 </p>
                 <button
                   className="button"
+                  id = "contact-me-button"
                   onClick={() => window.location.replace("/#contact")}
                 >
                   Contact
