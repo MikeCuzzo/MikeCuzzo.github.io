@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.12cf0bce.css",
-    "main.js": "/static/js/main.16abf564.js",
+    "main.css": "/static/css/main.5f0fe5d5.css",
+    "main.js": "/static/js/main.57160c0a.js",
     "static/media/tinyworldlogo.png": "/static/media/tinyworldlogo.a7678afd0c024ce9b2b6.png",
     "static/media/htvlogo.png": "/static/media/htvlogo.a30f252ae59403478d47.png",
     "index.html": "/index.html",
-    "main.12cf0bce.css.map": "/static/css/main.12cf0bce.css.map",
-    "main.16abf564.js.map": "/static/js/main.16abf564.js.map"
+    "main.5f0fe5d5.css.map": "/static/css/main.5f0fe5d5.css.map",
+    "main.57160c0a.js.map": "/static/js/main.57160c0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.12cf0bce.css",
-    "static/js/main.16abf564.js"
+    "static/css/main.5f0fe5d5.css",
+    "static/js/main.57160c0a.js"
   ]
 }
