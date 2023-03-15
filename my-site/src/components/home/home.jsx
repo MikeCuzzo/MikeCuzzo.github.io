@@ -10,7 +10,7 @@ export class Home extends React.Component {
           <h1>Michael Cuzzo</h1>
           <div id="home-info">
             <p>
-              A Frontend Developer focused on building Websites and Mobile
+              A Software Developer focused on building Websites and Mobile
               Applications to improve everyday life
             </p>
           </div>

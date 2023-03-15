@@ -33,13 +33,13 @@ export class Footer extends React.Component {
             <div id="footer-name">
               <h1>Michael Cuzzo</h1>
               <p>
-                A Frontend Developer focused on building Websites and Mobile
+                A Software Developer focused on building Websites and Mobile
                 Applications to improve everyday life
               </p>
             </div>
           </div>
           <div id="footer-lower-content">
-            <p>© Copyright 2022. Made by Michael Cuzzo</p>
+            <p>© Copyright 2023. Made by Michael Cuzzo</p>
           </div>
         </div>
       </div>

@@ -10,6 +10,9 @@ export class About extends React.Component {
     "React Native",
     "Swift",
     "SwiftUI",
+    "Java",
+    "Spring Boot",
+    "Amazon Web Services",
     "GIT",
     "Agile Development",
   ];
@@ -30,7 +33,7 @@ export class About extends React.Component {
               <h3 className="about-content-title">About Me</h3>
               <div>
                 <p className="about-me-content">
-                  I am a <strong>Frontend Developer </strong> focused on
+                  I am a <strong>Software Developer </strong> focused on
                   building Websites and Mobile Applications to improve everyday
                   life. Check out some of my work in the
                   <strong> Projects </strong> section.
@@ -43,7 +46,7 @@ export class About extends React.Component {
                 </p>
                 <button
                   className="button"
-                  id = "contact-me-button"
+                  id="contact-me-button"
                   onClick={() => window.location.replace("/#contact")}
                 >
                   Contact
