@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.5f0fe5d5.css",
-    "main.js": "/static/js/main.57160c0a.js",
+    "main.js": "/static/js/main.906aede6.js",
     "static/media/tinyworldlogo.png": "/static/media/tinyworldlogo.a7678afd0c024ce9b2b6.png",
     "static/media/htvlogo.png": "/static/media/htvlogo.a30f252ae59403478d47.png",
+    "static/media/elydzlogo.png": "/static/media/elydzlogo.a368607c183335e0b593.png",
     "index.html": "/index.html",
     "main.5f0fe5d5.css.map": "/static/css/main.5f0fe5d5.css.map",
-    "main.57160c0a.js.map": "/static/js/main.57160c0a.js.map"
+    "main.906aede6.js.map": "/static/js/main.906aede6.js.map"
   },
   "entrypoints": [
     "static/css/main.5f0fe5d5.css",
-    "static/js/main.57160c0a.js"
+    "static/js/main.906aede6.js"
   ]
 }
