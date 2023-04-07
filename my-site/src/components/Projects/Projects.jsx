@@ -1,6 +1,7 @@
 import React from "react";
 import htvlogo from "./Assets/htvlogo.png";
 import tinyworldlogo from "./Assets/tinyworldlogo.png";
+import elydzlogo from "./Assets/elydzlogo.png";
 import "./Projects.scss";
 
 export class Projects extends React.Component {
@@ -18,6 +19,13 @@ export class Projects extends React.Component {
         "This website is the home for the Tiny World NFT project. This Website is intended for users to gain information about the project, the lore and they will be able to mint items from this collection into their Ethereum wallets.",
       image: tinyworldlogo,
       link: "https://www.tinyworld.me",
+    },
+    {
+      name: "Elydz",
+      description:
+        "Eldyz, a rising music artist making waves in the industry. Immerse yourself in the unique style and artistry of this talented musician through their official website. Listen to their latest releases, and get to know the artist behind the music. Join the elydz community and stay up-to-date on all the latest news and releases from this exciting artist.",
+      image: elydzlogo,
+      link: "",
     },
   ];
   render() {
