@@ -25,7 +25,7 @@ export class Projects extends React.Component {
       description:
         "Eldyz, a rising music artist making waves in the industry. Immerse yourself in the unique style and artistry of this talented musician through their official website. Listen to their latest releases, and get to know the artist behind the music. Join the elydz community and stay up-to-date on all the latest news and releases from this exciting artist.",
       image: elydzlogo,
-      link: "",
+      link: "https://www.elydz.net/",
     },
   ];
   render() {
@@ -58,6 +58,7 @@ export class Projects extends React.Component {
                     <a
                       href={project.link}
                       target="_blank"
+                      rel="noreferrer"
                       className="live-link"
                     >
                       <button className="button">Live Link</button>
