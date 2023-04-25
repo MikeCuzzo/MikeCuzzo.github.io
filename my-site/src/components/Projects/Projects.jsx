@@ -2,6 +2,7 @@ import React from "react";
 import htvlogo from "./Assets/htvlogo.png";
 import tinyworldlogo from "./Assets/tinyworldlogo.png";
 import elydzlogo from "./Assets/elydzlogo.png";
+import picklemalllogo from "./Assets/picklemalllogo.png";
 import "./Projects.scss";
 
 export class Projects extends React.Component {
@@ -27,6 +28,13 @@ export class Projects extends React.Component {
       image: elydzlogo,
       link: "https://www.elydz.net/",
     },
+    {
+      name: "Pickle Mall",
+      description:
+        "The PickleMall website is designed to provide users with an effortless online experience, ensuring easy access to our cutting-edge indoor pickleball facilities. By allowing players to book courts, view schedules, and stay up-to-date on the latest events and promotions, our website is the go-to digital platform for pickleball enthusiasts. Connect with fellow players and secure your spot on the court today with the PickleMall website – your one-stop destination for all things pickleball.",
+      image: picklemalllogo,
+      link: "https://thepicklemall.com/",
+    },
   ];
   render() {
     return (
@@ -35,8 +43,9 @@ export class Projects extends React.Component {
           <div className="heading">
             <h1 className="section-header">Projects</h1>
             <p className="section-subheader">
-              Here you will find some of the personal and clients projects that
-              I created
+              On this page, you will discover a variety of personal and client
+              projects that showcase my creative abilities and collaborative
+              efforts with other talented individuals.
             </p>
           </div>
           <div id="projects-container">
