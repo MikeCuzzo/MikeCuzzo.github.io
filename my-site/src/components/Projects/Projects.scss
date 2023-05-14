@@ -37,6 +37,9 @@
     max-width: 60rem;
     line-height: 1.7;
     margin-bottom: 3rem;
+    @media only screen and (max-width: 768px) {
+      padding: 0 10vw;
+    }
   }
 }
 

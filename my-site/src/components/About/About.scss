@@ -24,12 +24,15 @@
   strong {
     font-size: inherit;
   }
+  @media (max-width: 768px) {
+    text-align: left;
+  }
 }
 
 #skills {
   display: flex;
   flex-wrap: wrap;
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 768px) {
     justify-content: center;
   }
 }
