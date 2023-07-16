@@ -1,6 +1,5 @@
 import React from "react";
 import htvlogo from "./Assets/htvlogo.png";
-import tinyworldlogo from "./Assets/tinyworldlogo.png";
 import elydzlogo from "./Assets/elydzlogo.png";
 import picklemalllogo from "./Assets/picklemalllogo.png";
 import "./Projects.scss";
@@ -13,13 +12,6 @@ export class Projects extends React.Component {
         "Head to Vegas was created to assist in the planning and booking of trips to Las Vegas. This is achieved by means of aggregating, saving and sharing of amenities essential to a trip to Las Vegas such as flights, hotels, events and reservations.",
       image: htvlogo,
       link: "https://www.headtovegas.com/",
-    },
-    {
-      name: "Tiny World",
-      description:
-        "This website is the home for the Tiny World NFT project. This Website is intended for users to gain information about the project, the lore and they will be able to mint items from this collection into their Ethereum wallets.",
-      image: tinyworldlogo,
-      link: "https://www.tinyworld.me",
     },
     {
       name: "Elydz",
