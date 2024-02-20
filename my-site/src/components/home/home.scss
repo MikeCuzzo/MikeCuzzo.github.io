@@ -50,12 +50,18 @@
 
 #downarrow {
   position: absolute;
-  bottom: 3%;
+  top: 85%;
   left: 50%;
   transform: translateX(-50%);
+  button {
+    border: 0;
+  }
   img {
-    width: 9rem;
-    height: 9rem;
+    width: 4rem;
+    height: 4rem;
     position: relative;
+  }
+  img:hover {
+    cursor: pointer;
   }
 }

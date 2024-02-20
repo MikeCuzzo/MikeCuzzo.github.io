@@ -33,13 +33,15 @@ export class Footer extends React.Component {
             <div id="footer-name">
               <h1>Michael Cuzzo</h1>
               <p>
-                A Software Developer focused on building Websites and Mobile
-                Applications to improve everyday life
+                A Software Developer specializing in building applications with
+                a strong emphasis on professional UI/UX design, bringing a
+                meticulous approach to creating seamless and user-friendly
+                digital experiences.
               </p>
             </div>
           </div>
           <div id="footer-lower-content">
-            <p>© Copyright 2023. Made by Michael Cuzzo</p>
+            <p>© Copyright 2024. Made by Michael Cuzzo</p>
           </div>
         </div>
       </div>

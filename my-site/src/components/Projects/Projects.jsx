@@ -3,16 +3,24 @@ import htvlogo from "./Assets/htvlogo.png";
 import elydzlogo from "./Assets/elydzlogo.png";
 import picklemalllogo from "./Assets/picklemalllogo.png";
 import aylologo from "./Assets/aylologo.png";
+import sideeye from "./Assets/sideeye.png";
 import "./Projects.scss";
 
 export class Projects extends React.Component {
   projects = [
     {
-      name: "Head to Vegas",
+      name: "Side Eye Studios",
       description:
-        "Head to Vegas was created to assist in the planning and booking of trips to Las Vegas. This is achieved by means of aggregating, saving and sharing of amenities essential to a trip to Las Vegas such as flights, hotels, events and reservations.",
-      image: htvlogo,
-      link: "https://www.headtovegas.com/",
+        "Welcome to Side Eye Studios, a leading studio specializing in 2D and 3D visual effects (VFX) and video editing. With a dedicated team of professionals, Side Eye is committed to bringing clients' creative visions to life with unparalleled expertise and innovation. From breathtaking special effects to stunning animations, the studio offers comprehensive services to enhance any project. Utilizing cutting-edge technology and a passion for storytelling, Side Eye transforms ideas into unforgettable cinematic experiences. Explore their portfolio and discover how your dreams can turn into reality!",
+      image: sideeye,
+      link: "https://www.side-eye.com/",
+    },
+    {
+      name: "Ryan Dylan Selkirk Portfolio Website",
+      description:
+        "Ryan Dylan Selkirk, also known as Aylo—a visionary music video director who transforms auditory art into mesmerizing visual experiences. With a distinct knack for animation and an eye for aesthetic nuance, Aylo's work captures the essence of music in every frame. Explore the site to view a curated selection of projects, and journey through a landscape where sound meets vision.",
+      image: aylologo,
+      link: "https://www.ryandylanselkirk.com/",
     },
     {
       name: "Elydz Portfolio Website",
@@ -29,11 +37,11 @@ export class Projects extends React.Component {
       link: "https://thepicklemall.com/",
     },
     {
-      name: "Ryan Dylan Selkirk Portfolio Website",
+      name: "Head to Vegas",
       description:
-        "Ryan Dylan Selkirk, also known as Aylo—a visionary music video director who transforms auditory art into mesmerizing visual experiences. With a distinct knack for animation and an eye for aesthetic nuance, Aylo's work captures the essence of music in every frame. Explore the site to view a curated selection of projects, and journey through a landscape where sound meets vision.",
-      image: aylologo,
-      link: "https://www.ryandylanselkirk.com/",
+        "Head to Vegas was created to assist in the planning and booking of trips to Las Vegas. This is achieved by means of aggregating, saving and sharing of amenities essential to a trip to Las Vegas such as flights, hotels, events and reservations.",
+      image: htvlogo,
+      link: "",
     },
   ];
   render() {
@@ -61,7 +69,7 @@ export class Projects extends React.Component {
                   <p>{project.description}</p>
                   {project.link === "" ? (
                     <button className="disabled-button">
-                      Live Link Coming Soon
+                      Live Link Unavailable
                     </button>
                   ) : (
                     <a

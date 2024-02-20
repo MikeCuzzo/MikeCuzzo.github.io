@@ -1,5 +1,6 @@
 import React from "react";
 import { Socials } from "./Socials/Socials";
+import downarrow from "./Assets/downarrow.gif";
 import "./Home.scss";
 
 export class Home extends React.Component {
@@ -10,8 +11,10 @@ export class Home extends React.Component {
           <h1>Michael Cuzzo</h1>
           <div id="home-info">
             <p>
-              A Software Developer focused on building Websites and Mobile
-              Applications to improve everyday life
+              A Software Developer specializing in building applications with a
+              strong emphasis on professional UI/UX design, bringing a
+              meticulous approach to creating seamless and user-friendly digital
+              experiences.
             </p>
           </div>
           <div id="home-button">
@@ -25,10 +28,9 @@ export class Home extends React.Component {
         </div>
         <Socials />
         <div id="downarrow">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/60f36cf54ab5a4742928e58e/1626569961284-WCMK8IK4S3NENWFCYJ0E/war+on+sanity+arrow+.gif"
-            alt="downarrow"
-          />
+          <button onClick={() => window.location.replace("/#about")}>
+            <img src={downarrow} alt="downarrow" />
+          </button>
         </div>
       </div>
     );

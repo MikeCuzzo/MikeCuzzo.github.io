@@ -12,6 +12,7 @@ export class About extends React.Component {
     "SwiftUI",
     "Java",
     "Spring Boot",
+    "Python",
     "Amazon Web Services",
     "GIT",
     "Agile Development",
@@ -25,7 +26,7 @@ export class About extends React.Component {
             <h1 className="section-header">About Me</h1>
             <p className="section-subheader">
               Here you will find more information about me, what I do, and my
-              current skills with programming and technology
+              current skills with programming and technology.
             </p>
           </div>
           <div id="about-content">
@@ -33,15 +34,16 @@ export class About extends React.Component {
               <h3 className="about-content-title">About Me</h3>
               <div>
                 <p className="about-me-content">
-                  I am a <strong>Software Developer </strong> focused on
-                  building Websites and Mobile Applications to improve everyday
-                  life. Check out some of my work in the
-                  <strong> Projects </strong> section.
+                  I am a <strong>Software Developer </strong> specializing in
+                  building applications with a strong emphasis on professional
+                  UI/UX design, bringing a meticulous approach to creating
+                  seamless and user-friendly digital experiences. Check out some
+                  of my work in the <strong>Projects</strong> section.
                 </p>
                 <p className="about-me-content">
                   I'm open to <strong>project</strong> opportunities where I can
                   contribute, learn and grow. If you have a good opportunity
-                  that matches my skills and experience then don't hesitate to
+                  that matches my skills and experience then don't hesitate to{" "}
                   <strong> contact</strong> me.
                 </p>
                 <button
