@@ -41,7 +41,7 @@ export class Footer extends React.Component {
             </div>
           </div>
           <div id="footer-lower-content">
-            <p>© Copyright 2024. Made by Michael Cuzzo</p>
+            <p>© Copyright 2025. Made by Michael Cuzzo</p>
           </div>
         </div>
       </div>

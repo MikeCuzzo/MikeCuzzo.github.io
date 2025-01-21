@@ -4,6 +4,7 @@ import elydzlogo from "./Assets/elydzlogo.png";
 import picklemalllogo from "./Assets/picklemalllogo.png";
 import aylologo from "./Assets/aylologo.png";
 import sideeye from "./Assets/sideeye.png";
+import gameonsportz from "./Assets/Gameonsportz.png";
 import "./Projects.scss";
 
 export class Projects extends React.Component {
@@ -14,6 +15,20 @@ export class Projects extends React.Component {
         "Welcome to Side Eye Studios, a leading studio specializing in 2D and 3D visual effects (VFX) and video editing. With a dedicated team of professionals, Side Eye is committed to bringing clients' creative visions to life with unparalleled expertise and innovation. From breathtaking special effects to stunning animations, the studio offers comprehensive services to enhance any project. Utilizing cutting-edge technology and a passion for storytelling, Side Eye transforms ideas into unforgettable cinematic experiences. Explore their portfolio and discover how your dreams can turn into reality!",
       image: sideeye,
       link: "https://www.side-eye.com/",
+    },
+    {
+      name: "Gameonsportz",
+      description:
+        "Worked on developing a Fantasy Football website in collaboration with Gameonsportz. Join an NFL league, build and manage your team, and access features like live scoring, detailed stats, and comprehensive reports. Explore a variety of pools, compete with friends, and win exciting prizes.",
+      image: gameonsportz,
+      link: "https://gameonsportz.com/",
+    },
+    {
+      name: "Pickle Mall",
+      description:
+        "The PickleMall website is designed to provide users with an effortless online experience, ensuring easy access to our cutting-edge indoor pickleball facilities. By allowing players to book courts, view schedules, and stay up-to-date on the latest events and promotions, our website is the go-to digital platform for pickleball enthusiasts. Connect with fellow players and secure your spot on the court today with the PickleMall website – your one-stop destination for all things pickleball.",
+      image: picklemalllogo,
+      link: "https://thepicklemall.com/",
     },
     {
       name: "Ryan Dylan Selkirk Portfolio Website",
@@ -28,20 +43,6 @@ export class Projects extends React.Component {
         "Eldyz, a rising music artist making waves in the industry. Immerse yourself in the unique style and artistry of this talented musician through their official website. Listen to their latest releases, and get to know the artist behind the music. Join the elydz community and stay up-to-date on all the latest news and releases from this exciting artist.",
       image: elydzlogo,
       link: "https://www.elydz.net/",
-    },
-    {
-      name: "Pickle Mall",
-      description:
-        "The PickleMall website is designed to provide users with an effortless online experience, ensuring easy access to our cutting-edge indoor pickleball facilities. By allowing players to book courts, view schedules, and stay up-to-date on the latest events and promotions, our website is the go-to digital platform for pickleball enthusiasts. Connect with fellow players and secure your spot on the court today with the PickleMall website – your one-stop destination for all things pickleball.",
-      image: picklemalllogo,
-      link: "https://thepicklemall.com/",
-    },
-    {
-      name: "Head to Vegas",
-      description:
-        "Head to Vegas was created to assist in the planning and booking of trips to Las Vegas. This is achieved by means of aggregating, saving and sharing of amenities essential to a trip to Las Vegas such as flights, hotels, events and reservations.",
-      image: htvlogo,
-      link: "",
     },
   ];
   render() {
