@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.72eb26b8.css",
-    "main.js": "/static/js/main.0ff7457f.js",
+    "main.js": "/static/js/main.6f1cf93c.js",
+    "static/media/Gameonsportz.png": "/static/media/Gameonsportz.78e53120591ac08e26cc.png",
     "static/media/sideeye.png": "/static/media/sideeye.cb8b617e1b76f04cde2c.png",
     "static/media/htvlogo.png": "/static/media/htvlogo.a30f252ae59403478d47.png",
     "static/media/elydzlogo.png": "/static/media/elydzlogo.996f325786fe106ddfa2.png",
@@ -9,10 +10,10 @@
     "static/media/picklemalllogo.png": "/static/media/picklemalllogo.e13772d9d4a985f36813.png",
     "index.html": "/index.html",
     "main.72eb26b8.css.map": "/static/css/main.72eb26b8.css.map",
-    "main.0ff7457f.js.map": "/static/js/main.0ff7457f.js.map"
+    "main.6f1cf93c.js.map": "/static/js/main.6f1cf93c.js.map"
   },
   "entrypoints": [
     "static/css/main.72eb26b8.css",
-    "static/js/main.0ff7457f.js"
+    "static/js/main.6f1cf93c.js"
   ]
 }
