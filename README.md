@@ -15,7 +15,15 @@ npm start
 npm run build
 ```
 
-Run these commands from the repository root. The generated site is in `build`. The existing `npm run deploy` command publishes that build to GitHub Pages.
+Run these commands from the repository root. The generated site is in `build`.
+
+## GitHub Pages deployment
+
+`.github/workflows/deploy-pages.yml` builds and deploys the site automatically on pushes to `master`. You can also run **Deploy portfolio to GitHub Pages** manually from the repository's Actions tab.
+
+In **Settings → Pages → Build and deployment**, the source must be **GitHub Actions**. The workflow runs `npm ci` and `npm run build`, then publishes only `build/`. Publishing the repository root directly displays the README instead of building the React application.
+
+The older `npm run deploy` command writes to a `gh-pages` branch; it is not used by this Actions deployment.
 
 ## Updating content
 
